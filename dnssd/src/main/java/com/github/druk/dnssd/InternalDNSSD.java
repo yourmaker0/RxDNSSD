@@ -842,8 +842,8 @@ class	AppleQuery extends AppleService
 	{
 		super(client);
 		this.ThrowOnErr( this.CreateQuery( flags, ifIndex, serviceName, rrtype, rrclass));
-		if (!AppleDNSSD.hasAutoCallbacks)
-			new Thread(this).start();
+// 		if (!AppleDNSSD.hasAutoCallbacks)
+// 			new Thread(this).start();
 	}
 
 	// Sets fNativeContext. Returns non-zero on error.
